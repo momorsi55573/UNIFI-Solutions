@@ -6,10 +6,10 @@ export class ToDoService {
     constructor() {
         this.toDoModel = ToDoModel;
     }
-   /* async getAllUserToDos(id: string) {
+    async getAllUserToDos(id: string) {
         const toDos = await this.toDoModel.find({user: id});
         return toDos;
-    }*/
+    }
     async getToDoById(id: string) {
         const toDo = await this.toDoModel.findById(id);
         return toDo;

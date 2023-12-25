@@ -21,7 +21,7 @@ export class toDoController {
         this.updateToDo();
         this.deleteToDo();
         this.getToDoById();
-       // this.getAllUserToDos();
+        this.getAllUserToDos();
         return this.router;
     }
     addToDo() {
@@ -48,10 +48,10 @@ export class toDoController {
             return res.status(200).send(getToDoById);
         })
     }
- /*   getAllUserToDos() {
+    getAllUserToDos() {
         this.router.get('/getAllUserToDos', async (req: Request, res: Response) => {
            const getAllUserToDos = await this.ToDoService.getAllUserToDos(this.user.id)
             return res.status(200).send(getAllUserToDos);
         })
-    }*/
+    }
  }
